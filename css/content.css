@@ -1,0 +1,129 @@
+.main-content {
+    margin-top: 100px;
+    height: 82vh;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    overflow: scroll;
+}
+/* .welcomeback-summary{ 
+    
+} */
+.welcomeback-summary .welcomeback{
+    grid-template-columns: auto ;
+    background-color: rgb(101, 184, 228);
+    margin: 25px;
+    border-radius: 5px;
+}
+
+.welcome-text{
+    grid-template-columns: auto 30%;
+   flex-direction: column;
+    padding: 10px;
+    color: var(--side-bar-color);
+    font-weight: 900;
+    font-size: 20px;
+}
+.summary-text {
+    padding: 12px;
+    background-color: var(--side-bar-color);
+}
+.category-number{
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: var(--boxshadow); */
+    background-color: var(--primary-color-light);
+}
+.category-number .number{
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+
+}
+.category-number .category{
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+   
+}
+.summary {
+    background-color: var(--side-bar-color);
+    grid-template-columns: auto 50%;
+    padding: 12px;
+    
+}
+.summary-info  {
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 5px;
+
+}
+
+.latest-patients{
+    margin: 25px;
+    background-color: var(--side-bar-color);
+
+}
+.latest-list{
+    padding: 10px;
+    margin-left: 55px;
+}
+thead tr{
+    background-color: var(--primary-color-light);
+    padding: 5px;
+}
+table {
+    width: 85vw;
+}
+tr {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15% 15%;
+}
+
+tr button ,.new{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.new {
+    margin-left: 55px;
+    margin-top: 10px;
+  
+}
+
+.fields,.values {
+    grid-template-columns: auto;
+}
+
+.fields >span {
+    display: flex;
+    padding-left: 10px;
+}
+
+.fields-values {
+    gap: 30px;
+}
+
+.personal-info,.medical-info {
+    gap: 15px;
+}
+
+.informations-displaying {
+    padding: 20px;
+    justify-content: center;
+
+}
+
+#id {
+    visibility: hidden;
+}
+
+
+
+
+

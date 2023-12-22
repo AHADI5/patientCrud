@@ -1,0 +1,64 @@
+.add-form{
+    margin-top: 100px;
+    height: 80vh;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    overflow: scroll;
+}
+.add-form form  {
+    margin: 15px;
+    background-color: var(--side-bar-color);
+    height: 65vh;
+    padding-left: 400px;
+}
+legend{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--primary-color-light);
+    width: 58%;
+    padding: 5px;
+    border-left: 4px solid var(--primary-color);
+}
+label {
+    padding-bottom: 5px;
+}
+.add-form form fieldset {
+    border: none;
+    margin-bottom: 20px;
+    
+}
+.add-form form .info {
+    display: grid;
+    grid-template-columns: 90%;
+}
+
+.add-form form fieldset input, select{
+   width: 100%;
+   padding: 3px;
+   border-radius: 3px;
+   border: 1px solid var(--text-color);
+   margin-top: 10px;
+}
+
+.add-form form fieldset >div {
+    display: grid;
+    grid-template-columns: 30% 30%;
+}
+
+.send button {
+    background-color: var(--primary-color);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 2px;   
+}
+
+select {
+    background-color: var(--side-bar-color);
+    outline: none;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 3px;
+    padding: 3px;
+}

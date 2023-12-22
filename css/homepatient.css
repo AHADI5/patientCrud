@@ -1,0 +1,15 @@
+.informations{
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    padding: 12px;
+}
+.informations div , span  {
+    margin-top: 10px;
+}
+
+.copyrigth {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}

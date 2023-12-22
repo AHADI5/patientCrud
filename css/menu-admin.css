@@ -1,0 +1,102 @@
+.head-bar {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+     /* background-color:var(--side-bar-color); */
+     padding: 15px;
+     color: var(--text-color);
+     background-color: var(--side-bar-color);
+  
+     
+}
+.head-bar .logo-text .logo .menu-button {
+    justify-content: center;
+    align-items: center;
+}
+.head-bar .logo-text .logo {
+    gap: 60px;
+}
+.head-bar .logo-text .logo-img {
+    width: 70px;
+}
+.head-bar .logo-text .logo-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+.head-bar .logo-text .logo .medinfo {
+    justify-content: center;
+    align-items: center;
+}
+.head-bar  .picture-name {
+    gap: 10px;
+    
+}
+
+.head-bar .system-title {
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.head-bar .picture-name .profile-picture {
+    border-radius: 50%;
+    background-color: var(--primary-color-light);
+    padding: 18px;
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.head-bar  .picture-name .icon{
+    justify-content: center;
+    align-items: center;
+}
+.head-bar  .picture-name .role{
+    color: var(--primary-color);
+}
+
+.menu {
+    top: 105px;
+    position: absolute;
+    background-color: var(--primary-color-light);
+    /* background-color: rgba(226, 215, 215, 0.8); */
+    backdrop-filter: blur(100%);
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.9s ease;
+ 
+}
+
+.menu li {
+    display: flex;
+    list-style: none;
+    margin-bottom: 10px;
+    gap: 30px;
+    transition: all 0.9s ease;
+}
+.menu li i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+hr{
+    opacity: 10%;
+}
+
+.menu.hidden-menu{
+    
+    width: 0;
+}
+.menu li.invisible {
+   opacity: 0;
+}
+
+
+
+
+
