@@ -51,9 +51,6 @@
 .left-side .text-side .title-login{
     font-weight: 900;
     font-size: 25px;
-    
-    
-
 }
 /* Login Side Starts here  */
 fieldset {
@@ -75,7 +72,7 @@ fieldset >div {
 }
 .login-section .login form #password,
 .login-section .login form #mail{
-    width: 100%;
+    width: 300px;
     padding: 5px;
     border: 1px solid var(--text-color);
     outline: none;
@@ -94,6 +91,5 @@ fieldset >div {
     color: white;
     padding: 5px;
     border-radius: 5px;
-    
 } 
 

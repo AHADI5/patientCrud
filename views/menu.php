@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <div class="head-bar flex">
         <div class="logo-text flex">
             <div class="logo flex">
@@ -21,7 +22,7 @@
                         
                         <li class="invisible">
                             <i class="bi bi-view-list"></i> 
-                            <a href="./list_patient.php">View</a>
+                            <a href="./list_patient.php">List</a>
                             <hr>
                         </li >
                        
@@ -41,8 +42,8 @@
             <div class="profile-picture flex"><i class="bi bi-person-circle"></i></div>
             <div class="name-role-icon flex">
                 <div class="name-role">
-                    <div class="name">Docile</div>
-                    <div class="role">Admin</div>
+                    <div class="name">Admin</div>
+                    <div class="role"><?php echo $_SESSION['admin']['mail'] ?></div>
                 </div>
                 <div class="icon flex"><i class="fa fas fa-angle-down"></i></div>
             </div>

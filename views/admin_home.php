@@ -1,3 +1,8 @@
+<?php 
+session_start();
+ include("../controllers/statistics.php");
+var_dump($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +25,7 @@
                <div class="welcome-text grid">
                     <div class="text">
                         <p>Welcome Back !</p>
-                         <p>Dashboard</p>
+                         <p>Dashboard <?php echo $_SESSION['admin']['mail'] ?></p>
                     </div>
                     <div class="admin-img-welcome">
                         <img src="../img/back3.jpeg" alt="welcome">
@@ -30,19 +35,19 @@
                     <div class="summary-text">Overview <br> Patients /category</div>
                     <div class="summary-info grid">
                         <div class="category-number">
-                            <span class="number">50</span>
+                            <span class="number"><?php echo $adult ?></span>
                             <span class="category">Adults</span>
                         </div>
                         <div class="category-number">
-                            <span class="number">50</span>
+                            <span class="number"><?php echo $children ?></span>
                             <span class="category">Children</span>
                         </div>
                         <div class="category-number">
-                            <span class="number">50</span>
+                            <span class="number"><?php echo $old ?></span>
                             <span class="category">Old</span>
                         </div>
                         <div class="category-number">
-                            <span class="number">50</span>
+                            <span class="number"><?php echo $babies ?></span>
                             <span class="category">Babies</span>
                         </div>
                     </div>
@@ -51,55 +56,6 @@
             </div>
         </div>
 
-        <div class="latest-patients">
-            <div class="latest-list">
-                <table class="patients">
-                    <thead >
-                        
-                        <tr>
-                            <td>N°</td>
-                            <td>Name</td>
-                            <td>Register Number</td>
-                            <td>Email</td>
-                            <td>Date</td>
-                            <td>Genre</td>
-                            <td>Details</td>   
-                        </tr>
-                        
-                    </thead>
-                   <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Gloire Ahadi</td>
-                            <td>001</td>
-                            <td>elie@gmail.com</td> 
-                            <td>20/04/2023</td>
-                            <td>Adulte</td>
-                            <td><button>view Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td> Docile Wakomya</td>
-                            <td>001</td>
-                            <td>elie@gmail.com</td> 
-                            <td>20/04/2023</td>
-                            <td>Adulte</td>
-                            <td><button>view Details</button></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td> Eliot Ander</td>
-                            <td>001</td>
-                            <td>elie@gmail.com</td> 
-                            <td>20/04/2023</td>
-                            <td>Adulte</td>
-                            <td><button>view Details</button></td>
-                        </tr>
-                   
-                   </tbody>
-                </table>
-            </div>
-        </div>
     </div>
 
     <script src="../js/menu.js"></script>
